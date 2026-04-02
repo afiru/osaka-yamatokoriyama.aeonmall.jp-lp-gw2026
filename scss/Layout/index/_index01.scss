@@ -1,0 +1,122 @@
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+@use "../../Functions/mixin"as mi;
+
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+.indexMain {
+
+    &::before {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100svh;
+        background: url(../img/indexMain.webp) no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.indexMainWap {}
+
+.picIndexMain {
+    position: sticky;
+    top: 0;
+    @include mi.ontenerWidth(1200, 787);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mi.mq(sp) {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        max-height: 62.62962962962963vh;
+    }
+}
+
+.spwap {
+    width: 375px;
+
+    @include mi.mq(sp) {
+        width: 100%;
+    }
+}
+
+.gwevent {
+    background: url(../img/bggwevent.webp) repeat top center;
+    background-size: 100% auto;
+    @include mi.paddingPercent(750, 0, 0, 40, 0);
+}
+
+.ulGwEvent {
+    width: 92%;
+    margin: auto;
+    transform: translate(0px, -1.99%);
+}
+
+.liGwEvent {
+    width: 100%;
+
+    &:nth-child(n+2) {
+        @include mi.marginPercent(690, 15, auto, 0, auto);
+
+        @include mi.mq(sp) {
+            margin-top: 5.07%;
+            margin-bottom: 0%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.txtGwEvent {
+    width: 88%;
+    @include mi.marginPercent(690, -88, auto, 0, auto);
+
+    @include mi.mq(tab) {
+        margin-top: -23.76%;
+        margin-bottom: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mi.mq(sp) {
+        margin-top: -23.76%;
+        margin-bottom: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.btnGwEvent {
+    width: 88%;
+    @include mi.marginPercent(690, 6, auto, 0, auto);
+
+    @include mi.mq(tab) {
+        margin-top: 1.86%;
+        margin-bottom: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mi.mq(sp) {
+        margin-top: 1.86%;
+        margin-bottom: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

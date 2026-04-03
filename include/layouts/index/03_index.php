@@ -42,7 +42,7 @@
         <img loading="lazy" src="img/txtGwEvent.svg" alt="GW" width="660" height="45.5">
     </p>
 
-    <a class="d_block undernone btnGwEvent" href="https://yamatokoriyama.aeonmall.jp/event" target="_blank">
+    <a class="d_block undernone btnGwEvent" href="https://yamatokoriyama.aeonmall.jp/event/32409b76-0460-4fc5-902d-b99157a837dd" target="_blank">
         <img loading="lazy" src="img/btnGwEvent.svg" alt="GW" width="660" height="100">
     </a>
 </div>
